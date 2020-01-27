@@ -3,12 +3,14 @@ spring:
     name: zuul
 
 server:
-  port: 9070
+  port: 8080
+  servlet:
+    context-path: /gateway
 
 eureka:
   instance:
     hostname: localhost
-    port: 9090
+    port: 8081
   client:
     registerWithEureka: true
     fetchRegistry: false
@@ -20,8 +22,8 @@ eureka:
 #zuul:
 #  routes:
 #    product:
-#      path: /services/product/**
-#      url: http://localhost:9098/products/enabled/all
+#      path: /products/**
+#      url: http://localhost:8082/products
 #    customer:
 #      path: /services/customer/**
 #      url: http://localhost:9097/v8/customers/active/all

@@ -1,14 +1,19 @@
 spring:
   application:
     name: product
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost;databaseName=gMax;sendTimeAsDateTime=false
+    username: sa
+    password: Trixrio@
 
 server:
-  port: 9098
+  port: 8082
 
 eureka:
   instance:
     hostname: localhost
-    port: 9090
+    port: 8081
   client:
     registerWithEureka: true
     fetchRegistry: false

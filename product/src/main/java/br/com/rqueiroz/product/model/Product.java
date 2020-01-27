@@ -1,29 +1,28 @@
 package br.com.rqueiroz.product.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+
+@Getter
+@Setter
 public class Product {
 
-    private Long clientCode;
-
-    private String name;
-
-    public Product(Long clientCode, String name) {
-        this.clientCode = clientCode;
-        this.name = name;
-    }
-
-    public Long getClientCode() {
-        return clientCode;
-    }
-
-    public void setClientCode(Long clientCode) {
-        this.clientCode = clientCode;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    Long id;
+    BigDecimal codigo;
+    String descricao;
+    BigDecimal vidaUtilEmKm;
+    BigDecimal vidaUtilEmMeses;
+    String posicaoNoVeiculo;
+    String codigoDeReferencia;
+    Boolean produtoControlado;
+    Boolean garantia;
+    Boolean produtoDeMontagem;
+    Boolean possuiSerializacao;
+    Boolean requisicaoEspecial;
+    Double peso;
+    BigDecimal ultimoValorComprado;
+    BigDecimal valorMedio;
+    
 }

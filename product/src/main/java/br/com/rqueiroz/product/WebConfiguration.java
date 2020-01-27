@@ -1,4 +1,4 @@
-package br.com.lelo.springcloud.myproduct;
+package br.com.rqueiroz.product;
 
 import com.google.common.base.Predicate;
 import org.springframework.context.annotation.Bean;
